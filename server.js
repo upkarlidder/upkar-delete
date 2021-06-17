@@ -8,7 +8,8 @@ const app = express();
 app.use(helmet());
 
 app.get('/', (req, res) => {
-   pino.debug('debugging the root route!');
+   pino.info('debugging the root route!');
+   pino.info('hello, world!');
    res.send('Hello, World!');
 });
 
